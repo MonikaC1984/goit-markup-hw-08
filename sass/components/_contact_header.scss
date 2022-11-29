@@ -1,0 +1,42 @@
+/* kontakt */
+
+.contact {
+  display: flex;
+  margin-left: auto;
+  width: 320px;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+
+  &__icon {
+    fill: var(--color-par);
+    margin-right: 10px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+// Reguła dla linku
+
+.contact__link {
+  color: var(--color-par);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-header);
+    color: var(--logo1-color);
+    border-color: var(--logo1-color);
+    fill: var(--logo1-color);
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: var(--logo1-color);
+  }
+}

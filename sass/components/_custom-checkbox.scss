@@ -1,0 +1,44 @@
+.custom-checkbox {
+  position: relative;
+  display: inline-flex;
+
+  &__input {
+    position: absolute;
+    left: 14px;
+    opacity: 0;
+
+    &:checked + .custom-checkbox__icon-border {
+      border: 1px solid var(--logo1-color);
+      background-color: var(--logo1-color);
+    }
+  }
+  &__icon-border {
+    position: absolute;
+    left: 14px;
+    top: 4px;
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    border: var(--color-h2) solid 2px;
+    border-radius: 4px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    fill: var(--color-header);
+  }
+
+  &__text {
+    margin-left: 37px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-par);
+
+    &--link {
+      color: var(--logo1-color);
+    }
+  }
+}
