@@ -1,9 +1,8 @@
 .social-footer {
-  margin-right: auto;
+  justify-content: center;
   margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
     margin: 0 78px 100px 70px;
-    padding-top: 12px;
   }
   &__text {
     color: var(--color-header);
@@ -11,5 +10,9 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.17;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 }

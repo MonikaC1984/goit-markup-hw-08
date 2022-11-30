@@ -1,18 +1,39 @@
 /* kontakt */
 
 .contact {
-  display: flex;
-  margin-left: auto;
-  width: 320px;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
+  display: none;
 
-  &__icon {
-    fill: var(--color-par);
-    margin-right: 10px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 84px;
+
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    width: 320px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+    &__icon {
+      fill: var(--color-par);
+      margin-right: 10px;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media screen and (min-width: 768px) {
+        margin-right: 6px;
+        width: 14px;
+        height: 10px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-right: 10px;
+        width: 16px;
+        height: 12px;
+      }
+    }
   }
 }
 // Reguła dla linku

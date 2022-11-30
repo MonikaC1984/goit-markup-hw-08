@@ -1,6 +1,5 @@
 .newsletter-box {
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: center;
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-top: 20px;
