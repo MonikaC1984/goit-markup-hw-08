@@ -5,8 +5,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 101px;
-
+    margin-left: 74px;
     flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
@@ -21,8 +20,6 @@
 
   &__item {
     display: flex;
-    flex-wrap: nowrap;
-    min-width: 40px;
   }
 
   &__icon-tel {
