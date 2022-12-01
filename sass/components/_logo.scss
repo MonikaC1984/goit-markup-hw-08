@@ -4,10 +4,18 @@
 
 .logo {
   display: flex;
-  margin-right: 93px;
+
   padding: 0;
   align-items: center;
   text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 83px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 
   &:hover,
   &:focus {

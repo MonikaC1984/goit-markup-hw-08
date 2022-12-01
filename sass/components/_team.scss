@@ -23,19 +23,19 @@
     }
   }
 
-  &__img {
-    max-width: 450px;
-    max-height: 460px;
+  // &__img {
+  //   max-width: 450px;
+  //   max-height: 460px;
 
-    @media screen and (min-width: 768px) {
-      max-width: 354px;
-      max-height: 374px;
-    }
-    @media screen and (min-width: 1200px) {
-      max-width: 270px;
-      max-height: 260px;
-    }
-  }
+  //   @media screen and (min-width: 768px) {
+  //     max-width: 354px;
+  //     max-height: 374px;
+  //   }
+  //   @media screen and (min-width: 1200px) {
+  //     max-width: 270px;
+  //     max-height: 260px;
+  //   }
+  // }
 
   &__names {
     font-family: "Roboto";

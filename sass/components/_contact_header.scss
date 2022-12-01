@@ -5,22 +5,30 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 84px;
-    width: 162px;
+    margin-left: 101px;
+
     flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-right: auto;
-    width: 320px;
+    margin-right: 15px;
+    margin-left: auto;
+    min-width: 320px;
     justify-content: space-between;
     align-items: center;
     list-style: none;
   }
 
+  &__item {
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 40px;
+  }
+
   &__icon-tel {
     fill: var(--color-par);
     margin-right: 10px;
+
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -38,7 +46,7 @@
 
   &__icon-mail {
     fill: var(--color-par);
-
+    flex-wrap: nowrap;
     margin-right: 10px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
