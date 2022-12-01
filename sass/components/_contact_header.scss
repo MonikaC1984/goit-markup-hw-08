@@ -6,54 +6,56 @@
   @media screen and (min-width: 768px) {
     display: flex;
     margin-left: 84px;
-
+    width: 162px;
     flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-left: auto;
+    margin-right: auto;
     width: 320px;
     justify-content: space-between;
     align-items: center;
     list-style: none;
+  }
 
-    &__icon-tel {
-      fill: var(--color-par);
-      margin-right: 10px;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &__icon-tel {
+    fill: var(--color-par);
+    margin-right: 10px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-      @media screen and (min-width: 768px) {
-        margin-right: 6px;
-        width: 10px;
-        height: 14px;
-      }
-      @media screen and (min-width: 1200px) {
-        margin-right: 10px;
-        width: 10px;
-        height: 16px;
-      }
+    @media screen and (min-width: 768px) {
+      margin-right: 6px;
+      width: 10px;
+      height: 14px;
     }
-
-    &__icon-mail {
-      fill: var(--color-par);
+    @media screen and (min-width: 1200px) {
       margin-right: 10px;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      width: 10px;
+      height: 16px;
+    }
+  }
 
-      @media screen and (min-width: 768px) {
-        margin-right: 6px;
-        width: 14px;
-        height: 10px;
-      }
-      @media screen and (min-width: 1200px) {
-        margin-right: 10px;
-        width: 16px;
-        height: 12px;
-      }
+  &__icon-mail {
+    fill: var(--color-par);
+
+    margin-right: 10px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      margin-right: 6px;
+      width: 14px;
+      height: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+      width: 16px;
+      height: 12px;
     }
   }
 }
+
 // Reguła dla linku
 
 .contact__link {
