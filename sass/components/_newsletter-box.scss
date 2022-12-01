@@ -41,20 +41,20 @@
     border: none;
     margin: auto;
   }
-}
 
-&__text {
-  white-space: nowrap;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 24px;
-  font-weight: 700;
-  color: var(--color-header);
-  font-size: 16px;
-  line-height: 1.88;
-}
+  &__text {
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 24px;
+    font-weight: 700;
+    color: var(--color-header);
+    font-size: 16px;
+    line-height: 1.88;
+  }
 
-&__icon {
-  margin-top: 13px;
-  margin-bottom: 13px;
+  &__icon {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
 }

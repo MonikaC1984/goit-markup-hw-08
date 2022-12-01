@@ -798,6 +798,32 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (min-width: 768px) {
+  .team__item {
+    size: max-widht 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    size: max-widht 270px;
+  }
+}
+.team__img {
+  max-width: 450px;
+  max-height: 460px;
+}
+@media screen and (min-width: 768px) {
+  .team__img {
+    max-width: 354px;
+    max-height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__img {
+    max-width: 270px;
+    max-height: 260px;
+  }
+}
 .team__names {
   font-family: "Roboto";
   font-weight: 500;
@@ -992,11 +1018,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (min-width: 1200px) {
-  .newsletter-footer {
-    padding-top: 12px;
-  }
-}
 .newsletter-footer__text {
   color: var(--color-header);
   text-transform: uppercase;
@@ -1072,11 +1093,6 @@ body {
   border-radius: 4px;
   border: none;
   margin: auto;
-}
-@media screen and (min-width: 768px) {
-  .newsletter-box__button {
-    margin: auto;
-  }
 }
 .newsletter-box__text {
   white-space: nowrap;
