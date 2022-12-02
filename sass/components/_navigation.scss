@@ -1,6 +1,9 @@
 /* nawigacja */
 .nav {
   margin-left: auto;
+  @media screen and (min-width: 768px) {
+    margin: auto;
+  }
 }
 .nav__list {
   display: none;
@@ -72,6 +75,7 @@
   cursor: pointer;
   border: none;
   display: flex;
+  margin-left: auto;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

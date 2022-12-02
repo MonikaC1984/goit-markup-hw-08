@@ -5,6 +5,11 @@
   line-height: 24px;
   padding-top: 15px;
   letter-spacing: 0.03em;
+  margin: auto;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 
   &__address {
     color: var(--color-header);
