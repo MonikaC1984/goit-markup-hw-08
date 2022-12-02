@@ -36,7 +36,10 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-par);
-
+    @media screen and (max-width: 1200px) {
+      font-size: 12px;
+      line-height: calc (14 / 12);
+    }
     &--link {
       color: var(--logo1-color);
     }

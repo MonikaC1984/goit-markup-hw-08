@@ -75,24 +75,13 @@ body {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container--h1 {
@@ -117,9 +106,13 @@ body {
           flex-direction: column;
 }
 
+.container--footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 @media screen and (max-width: 768px) {
   .container--footer {
-    max-width: 768;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -730,7 +723,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .card-set__item {
-    max-width: 354px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 .card-set__image {
@@ -838,16 +832,25 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .team__item {
-    size: max-width 354px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
-    size: max-width 270px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 4);
+        flex-basis: calc((100% - 30px) / 4);
   }
+}
+.team__img {
+  width: 100%;
+}
+.team__picture {
+  width: 100%;
 }
 .team__names {
   font-family: "Roboto";
@@ -916,8 +919,8 @@ body {
   }
 }
 .clients__item {
-  -ms-flex-preferred-size: 210px;
-      flex-basis: 210px;
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
   border: 1px solid var(--svg-color-fill);
   border-radius: 4px;
   fill: var(--svg-color-fill);
@@ -937,14 +940,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .clients__item {
-    -ms-flex-preferred-size: 226px;
-        flex-basis: 226px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 3);
+        flex-basis: calc((100% - 30px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    -ms-flex-preferred-size: 170px;
-        flex-basis: 170px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 6);
+        flex-basis: calc((100% - 30px) / 6);
   }
 }
 .clients__item:hover, .clients__item:focus {
@@ -1294,12 +1297,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: var(--color-header);
+  cursor: pointer;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__title {
   margin-bottom: 12px;
@@ -1309,6 +1314,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-h2);
+}
+@media screen and (max-width: 768px) {
+  .modal__title {
+    line-height: 30px;
+  }
 }
 
 .fieldset {
@@ -1465,14 +1475,20 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-par);
 }
+@media screen and (max-width: 1200px) {
+  .custom-checkbox__text {
+    font-size: 12px;
+    line-height: calc 1.1666666667;
+  }
+}
 .custom-checkbox__text--link {
   color: var(--logo1-color);
 }
 
 .modal-button {
   display: block;
-  margin-top: 30px;
-  margin-left: 120px;
+  margin-top: 31px;
+  margin-left: 85px;
   width: 200px;
   height: 50px;
   background: var(--logo1-color);
@@ -1489,4 +1505,10 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: var(--logo1-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-button {
+    margin-left: 124px;
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
