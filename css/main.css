@@ -957,8 +957,8 @@ body {
   }
 }
 .clients__item {
-  -ms-flex-preferred-size: calc((100% - 60px) / 2);
-      flex-basis: calc((100% - 60px) / 2);
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
   border: 1px solid var(--svg-color-fill);
   border-radius: 4px;
   fill: var(--svg-color-fill);
