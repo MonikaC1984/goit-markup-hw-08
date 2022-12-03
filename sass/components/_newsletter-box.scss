@@ -1,11 +1,12 @@
 .newsletter-box {
   justify-content: center;
+
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-top: 20px;
   }
   &__email {
-    width: 100%;
+    width: 450px;
 
     margin-bottom: 20px;
     padding: 15px 295px 15px 16px;
@@ -23,6 +24,7 @@
     @media screen and (min-width: 768px) {
       width: 450px;
       display: flex;
+      justify-content: center;
     }
     @media screen and (min-width: 1200px) {
       width: 358px;
