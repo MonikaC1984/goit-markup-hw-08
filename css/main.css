@@ -1086,7 +1086,7 @@ body {
   padding: 12px;
   border-radius: 50%;
   background-color: var(--color-par);
-  fill: var(--svg-color-fill);
+  fill: var(--color-header);
   margin-left: 0px;
   margin-top: 20px;
   -webkit-transition-duration: 250ms;
