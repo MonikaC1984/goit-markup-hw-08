@@ -1503,7 +1503,7 @@ body {
 }
 .custom-checkbox__input {
   position: absolute;
-  left: 14px;
+  left: 0px;
   opacity: 0;
 }
 .custom-checkbox__input:checked + .custom-checkbox__icon-border {
@@ -1512,8 +1512,8 @@ body {
 }
 .custom-checkbox__icon-border {
   position: absolute;
-  left: 14px;
-  top: 4px;
+  left: 0px;
+  top: 1px;
   margin-right: 7px;
   width: 16px;
   height: 15px;
@@ -1527,7 +1527,7 @@ body {
   fill: var(--color-header);
 }
 .custom-checkbox__text {
-  margin-left: 37px;
+  margin-left: 24px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
