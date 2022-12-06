@@ -3,20 +3,22 @@
 }
 
 .mobile-menu {
-  position: relative;
+  position: fixed;
 
   width: 100vw;
   height: 100vh;
   background-color: var(--color-header);
   z-index: 10;
-  padding-top: 48px;
+  padding-top: 10px;
+  padding-right: 15px;
   padding-left: 40px;
   padding-bottom: 48px;
 
   &__btn {
-    position: absolute;
-    right: 25.33px;
-    top: 21px;
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 18px;
+
     background-color: var(--color-header);
     border: none;
 
