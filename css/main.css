@@ -1107,7 +1107,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
+  margin: 0;
 }
 .newsletter-footer__text {
   color: var(--color-header);
